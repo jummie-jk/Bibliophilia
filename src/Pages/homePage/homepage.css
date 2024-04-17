@@ -1,0 +1,247 @@
+.section{
+    padding: 4rem 6rem;
+}
+.home-page {
+    background-image: linear-gradient(
+          rgba(20, 29, 38, 0.7),
+         rgba(20, 29, 38, 0.7)),
+    url("../../assets/bg-main.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}  
+.explore{
+font-family: 'Nunito' , sans-serif;
+font-size: 64px;
+font-weight: 700;
+line-height: 83.2px;
+text-align: center;
+color: white;
+}
+.text-div{
+    padding-top: 15rem;
+    text-align: center;
+    font-family: 'Nunito' , sans-serif;
+    animation-name: moveInButtom;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+}
+.discover{
+
+font-size: 24px;
+font-weight: 600;
+line-height: 32.74px;
+letter-spacing: 0.04em;
+text-align: center;
+color: white;
+margin-top: 2rem;
+}
+.button-primary {
+    background-color: #5D38CE;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  
+  .button-primary:hover {
+    background-color: #4b2aac; 
+  }
+
+  /* Animations */
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}   
+@keyframes moveInButtom {
+    0% {
+      opacity: 0;
+      transform: translateY(5rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); }
+ }
+  
+
+@media screen and (min-width: 500px) {
+    .web-hide{
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .section{
+        padding: 3rem 2rem;
+    }
+    .intro-text{
+        font-size: 70px;
+        
+    }
+    .my-image{
+        margin-top: 2rem;
+    }
+    .my-image{
+        width: 400px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 900px) {
+    .section{
+        padding: 3rem 2rem;
+    }
+    .explore{
+        font-size: 54px;
+        line-height: 63.2px;
+        }
+    .homepage-intro-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .intro-text{
+        font-size: 50px;
+        
+    }
+    .my-image{
+        margin-top: 2rem;
+    }
+    .about-section{
+        display: flex;
+        height: 50vh;
+        flex-wrap: wrap;
+    }
+    .grid-item{
+        flex-basis: 100%;
+    }
+    .header-text{
+        font-size: 52px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .about-section{
+        display: flex;
+        height: 60vh;
+        flex-wrap: wrap;
+    }
+    .explore{
+        font-size: 44px;
+        line-height: 63.2px;
+        }
+    .grid-item{
+        flex-grow: 1; 
+        margin: 0;
+        flex-basis: content;
+    }
+    .about-text{
+        font-size: 18px;
+        padding-bottom: 1rem;
+    }
+    .contact-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .view-all{
+        margin-top: 1rem;
+    }
+    .header-text{
+        font-size: 45px;
+    }
+    .intro-mini{
+        font-size: 17px;
+        line-height: 28px;
+        
+    }
+}
+@media screen and (max-width: 500px) {
+    .section{
+        padding: 3rem 2rem;
+    }
+    .intro-text{
+        font-size: 57px;
+        
+    }
+    .explore{
+        font-size: 34px;
+        line-height: 43.2px;
+        }
+    .intro-mini{
+        font-size: 16px;
+        line-height: 28px;
+        
+    }
+    .my-image{
+        width: 350px;
+        height: auto;
+    }
+    .web-hide{
+        display: block;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .contact-button {
+        width: 150px;
+        height: 50px;
+        /* padding: 10px 20px; */
+       
+    }
+    .header-text{
+        font-size: 40px;
+    }
+
+    
+}
+@media screen and (max-width: 420px) {
+    .section{
+        padding: 3rem 3rem;
+    }
+    .explore{
+        font-size: 40px;
+        line-height: 63.2px;
+        }
+    .intro-text{
+        font-size: 57px;
+        
+    }
+    .intro-mini{
+        font-size: 16px;
+        line-height: 28px;
+        
+    }
+    .my-image{
+        width: 320px;
+        height: auto;
+    }
+    .web-hide{
+        display: block;
+    }
+    .mobile-hide{
+        display: none;
+    }
+}
